@@ -1,0 +1,14 @@
+{
+  "default_algorithm": "token_bucket",
+  "token_bucket": {"capacity": 10, "refill_per_second": 2.0},
+  "fixed_window": {"limit": 10, "window_seconds": 10.0},
+  "sliding_window": {"limit": 10, "window_seconds": 10.0},
+  "storage": {
+    "max_users": 10000,
+    "idle_ttl_seconds": 3600.0,
+    "max_events": 2000,
+    "event_retention_seconds": 3600.0,
+    "max_session_users": 1000
+  }
+}
+

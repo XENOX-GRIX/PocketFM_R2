@@ -1,0 +1,149 @@
+{
+  "result": "INTERRUPTED",
+  "exit_code": 130,
+  "fatal_error": "interrupted by user",
+  "base_url": "http://127.0.0.1:8000",
+  "durations_seconds": [
+    20.0,
+    40.0,
+    60.0
+  ],
+  "configuration": {
+    "active_algorithm": "sliding_window",
+    "changed_at": "2026-11-04T10:40:18.168815+00:00",
+    "policy_version": 2,
+    "settings": {
+      "default_algorithm": "token_bucket",
+      "fixed_window": {
+        "limit": 10,
+        "window_seconds": 10.0
+      },
+      "sliding_window": {
+        "limit": 10,
+        "window_seconds": 10.0
+      },
+      "storage": {
+        "event_retention_seconds": 3600.0,
+        "idle_ttl_seconds": 3600.0,
+        "max_events": 2000,
+        "max_users": 10000
+      },
+      "token_bucket": {
+        "capacity": 10,
+        "refill_per_second": 2.0
+      }
+    }
+  },
+  "users": [
+    {
+      "user_id": "probe-bfbc7960b571406b-01",
+      "interval_seconds": 0.05,
+      "requests": 2254,
+      "allowed": 120,
+      "rejected": 2134,
+      "validation_errors": 0,
+      "recovery_checks_passed": 2,
+      "mean_latency_ms": 3.47,
+      "max_latency_ms": 28.86
+    },
+    {
+      "user_id": "probe-bfbc7960b571406b-02",
+      "interval_seconds": 0.1,
+      "requests": 1129,
+      "allowed": 120,
+      "rejected": 1009,
+      "validation_errors": 0,
+      "recovery_checks_passed": 2,
+      "mean_latency_ms": 3.88,
+      "max_latency_ms": 31.92
+    },
+    {
+      "user_id": "probe-bfbc7960b571406b-03",
+      "interval_seconds": 0.15,
+      "requests": 755,
+      "allowed": 120,
+      "rejected": 635,
+      "validation_errors": 0,
+      "recovery_checks_passed": 2,
+      "mean_latency_ms": 3.92,
+      "max_latency_ms": 20.81
+    },
+    {
+      "user_id": "probe-bfbc7960b571406b-04",
+      "interval_seconds": 0.25,
+      "requests": 454,
+      "allowed": 118,
+      "rejected": 336,
+      "validation_errors": 0,
+      "recovery_checks_passed": 2,
+      "mean_latency_ms": 4.13,
+      "max_latency_ms": 24.62
+    },
+    {
+      "user_id": "probe-bfbc7960b571406b-05",
+      "interval_seconds": 0.4,
+      "requests": 285,
+      "allowed": 113,
+      "rejected": 172,
+      "validation_errors": 0,
+      "recovery_checks_passed": 2,
+      "mean_latency_ms": 4.73,
+      "max_latency_ms": 33.38
+    },
+    {
+      "user_id": "probe-bfbc7960b571406b-06",
+      "interval_seconds": 0.6,
+      "requests": 192,
+      "allowed": 113,
+      "rejected": 79,
+      "validation_errors": 0,
+      "recovery_checks_passed": 2,
+      "mean_latency_ms": 5.25,
+      "max_latency_ms": 27.83
+    },
+    {
+      "user_id": "probe-bfbc7960b571406b-07",
+      "interval_seconds": 0.8,
+      "requests": 144,
+      "allowed": 111,
+      "rejected": 33,
+      "validation_errors": 0,
+      "recovery_checks_passed": 2,
+      "mean_latency_ms": 4.99,
+      "max_latency_ms": 28.48
+    },
+    {
+      "user_id": "probe-bfbc7960b571406b-08",
+      "interval_seconds": 1.0,
+      "requests": 116,
+      "allowed": 108,
+      "rejected": 8,
+      "validation_errors": 0,
+      "recovery_checks_passed": 2,
+      "mean_latency_ms": 5.38,
+      "max_latency_ms": 20.26
+    },
+    {
+      "user_id": "probe-bfbc7960b571406b-09",
+      "interval_seconds": 1.5,
+      "requests": 80,
+      "allowed": 80,
+      "rejected": 0,
+      "validation_errors": 0,
+      "recovery_checks_passed": 2,
+      "mean_latency_ms": 5.82,
+      "max_latency_ms": 21.36
+    },
+    {
+      "user_id": "probe-bfbc7960b571406b-10",
+      "interval_seconds": 2.0,
+      "requests": 60,
+      "allowed": 60,
+      "rejected": 0,
+      "validation_errors": 0,
+      "recovery_checks_passed": 2,
+      "mean_latency_ms": 6.24,
+      "max_latency_ms": 28.04
+    }
+  ]
+}
